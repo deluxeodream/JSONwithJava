@@ -7,24 +7,23 @@ import java.util.List;
 
 public class NameUtils {
 
-    public static List<Member> nameFormatConverter(List<Member> inputList) throws NullPointerException {
+    public static List<Member> nameFormatConverter(List<Member> inputList) {
         List<Member> outputList = new ArrayList<>();
-        for (Member members: inputList) {
-            if (members.firstName == null || members.firstName.isEmpty()) {
-                String[] nameParts = members.name.split(", ");
+        for (Member member: inputList) {
+            if (member.getFirstName() == null || member.getFirstName().isEmpty()) {
+                String[] nameParts = member.getName().split(", ");
                 if (nameParts.length == 2) {
                     outputList.add(new Member(
                             nameParts[1],
                             "",
                             nameParts[0],
-                            members.categoryKey,
-                            members.remarks));
+                            member.getCategoryKey(),
+                            member.getRemarks()));
                 }
             } else {
-                outputList.add(members);
+                outputList.add(member);
             }
         }
-
         return outputList;
     }
 

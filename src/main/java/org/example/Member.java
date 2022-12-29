@@ -1,12 +1,12 @@
 package org.example;
 
 public class Member {
-    public String name;
-    public String firstName;
-    public String middleName;
-    public String lastName;
-    public String categoryKey;
-    public String remarks;
+    private String name;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private final String categoryKey;
+    private final String remarks;
 
     public Member(String name, String categoryKey, String remarks) {
         this.name = name;
@@ -20,6 +20,30 @@ public class Member {
         this.lastName = lastName;
         this.categoryKey = categoryKey;
         this.remarks = remarks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getCategoryKey() {
+        return categoryKey;
+    }
+
+    public String getRemarks() {
+        return remarks;
     }
 
     @Override

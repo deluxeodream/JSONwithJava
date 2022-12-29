@@ -1,1 +1,16 @@
-[{"firstName":"Jimbo","middleName":"","lastName":"ADOREMOS","categoryKey":"GROUP_YOUTH","remarks":""},{"firstName":"Leizl","middleName":"","lastName":"ADOREMOS","categoryKey":"GROUP_LADIES","remarks":""}]
+[
+  {
+    "firstName": "Jimbo",
+    "middleName": "",
+    "lastName": "ADOREMOS",
+    "categoryKey": "GROUP_YOUTH",
+    "remarks": ""
+  },
+  {
+    "firstName": "Leizl",
+    "middleName": "",
+    "lastName": "ADOREMOS",
+    "categoryKey": "GROUP_LADIES",
+    "remarks": ""
+  }
+]
