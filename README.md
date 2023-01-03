@@ -1,7 +1,4 @@
-﻿# JSONwithJava
+﻿# Member Formatter
  
-Update the name and split it to firstname, middlename, and lastname in JSON data.
-
-Library used- Gson
- 
+Format the name of a member from a json file. 
  
